@@ -10,10 +10,11 @@
 		84FC6554504F12CFE058A0FF /* libPods-MangoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B35D1886467BA9449A86B65 /* libPods-MangoTest.a */; };
 		CB19C70C293B33B700525CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C70B293B33B700525CC3 /* AppDelegate.swift */; };
 		CB19C70E293B33B700525CC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C70D293B33B700525CC3 /* SceneDelegate.swift */; };
-		CB19C710293B33B700525CC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C70F293B33B700525CC3 /* ViewController.swift */; };
-		CB19C713293B33B700525CC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB19C711293B33B700525CC3 /* Main.storyboard */; };
 		CB19C715293B33BA00525CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB19C714293B33BA00525CC3 /* Assets.xcassets */; };
 		CB19C718293B33BA00525CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB19C716293B33BA00525CC3 /* LaunchScreen.storyboard */; };
+		CB19C721293B3B4700525CC3 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CB19C720293B3B4700525CC3 /* loader.json */; };
+		CB19C723293B3BED00525CC3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C722293B3BED00525CC3 /* RootViewController.swift */; };
+		CB19C725293B3BF900525CC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C724293B3BF900525CC3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		CB19C708293B33B700525CC3 /* MangoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB19C70B293B33B700525CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB19C70D293B33B700525CC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB19C70F293B33B700525CC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB19C712293B33B700525CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB19C714293B33BA00525CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB19C717293B33BA00525CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB19C719293B33BA00525CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB19C720293B3B4700525CC3 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		CB19C722293B3BED00525CC3 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CB19C724293B3BF900525CC3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +74,24 @@
 		CB19C70A293B33B700525CC3 /* MangoTest */ = {
 			isa = PBXGroup;
 			children = (
+				CB19C726293B3C2600525CC3 /* Source */,
 				CB19C70B293B33B700525CC3 /* AppDelegate.swift */,
 				CB19C70D293B33B700525CC3 /* SceneDelegate.swift */,
-				CB19C70F293B33B700525CC3 /* ViewController.swift */,
-				CB19C711293B33B700525CC3 /* Main.storyboard */,
+				CB19C722293B3BED00525CC3 /* RootViewController.swift */,
+				CB19C724293B3BF900525CC3 /* Extensions.swift */,
 				CB19C714293B33BA00525CC3 /* Assets.xcassets */,
 				CB19C716293B33BA00525CC3 /* LaunchScreen.storyboard */,
 				CB19C719293B33BA00525CC3 /* Info.plist */,
 			);
 			path = MangoTest;
+			sourceTree = "<group>";
+		};
+		CB19C726293B3C2600525CC3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB19C720293B3B4700525CC3 /* loader.json */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		F88FBE39FDA25BC793AD66F3 /* Frameworks */ = {
@@ -153,7 +164,7 @@
 			files = (
 				CB19C718293B33BA00525CC3 /* LaunchScreen.storyboard in Resources */,
 				CB19C715293B33BA00525CC3 /* Assets.xcassets in Resources */,
-				CB19C713293B33B700525CC3 /* Main.storyboard in Resources */,
+				CB19C721293B3B4700525CC3 /* loader.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB19C710293B33B700525CC3 /* ViewController.swift in Sources */,
+				CB19C725293B3BF900525CC3 /* Extensions.swift in Sources */,
 				CB19C70C293B33B700525CC3 /* AppDelegate.swift in Sources */,
+				CB19C723293B3BED00525CC3 /* RootViewController.swift in Sources */,
 				CB19C70E293B33B700525CC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB19C711293B33B700525CC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB19C712293B33B700525CC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB19C716293B33BA00525CC3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +367,6 @@
 				INFOPLIST_FILE = MangoTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -394,7 +397,6 @@
 				INFOPLIST_FILE = MangoTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
