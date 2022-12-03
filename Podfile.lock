@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (3.3.0)
+  - SwiftLint (0.47.0)
+
+DEPENDENCIES:
+  - lottie-ios
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
+
+PODFILE CHECKSUM: b5d46031dce17e066658235182df73e0c5c78e27
+
+COCOAPODS: 1.11.2
