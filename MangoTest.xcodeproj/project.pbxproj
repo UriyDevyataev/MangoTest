@@ -15,6 +15,23 @@
 		CB19C721293B3B4700525CC3 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CB19C720293B3B4700525CC3 /* loader.json */; };
 		CB19C723293B3BED00525CC3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C722293B3BED00525CC3 /* RootViewController.swift */; };
 		CB19C725293B3BF900525CC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C724293B3BF900525CC3 /* Extensions.swift */; };
+		CB19C729293B457600525CC3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C728293B457600525CC3 /* AuthViewController.swift */; };
+		CB19C72D293B45A300525CC3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C72C293B45A300525CC3 /* NetworkService.swift */; };
+		CB19C72F293B45B600525CC3 /* MangoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C72E293B45B600525CC3 /* MangoModel.swift */; };
+		CB19C735293B50A800525CC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB19C734293B50A800525CC3 /* Localizable.strings */; };
+		CB19C737293B572700525CC3 /* SelectCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C736293B572700525CC3 /* SelectCountryViewController.swift */; };
+		CB19C73A293B573E00525CC3 /* SelectCountryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB19C739293B573E00525CC3 /* SelectCountryViewController.storyboard */; };
+		CB19C73C293B684800525CC3 /* RightLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C73B293B684800525CC3 /* RightLabelTableViewCell.swift */; };
+		CB19C73E293B6BCA00525CC3 /* CountryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19C73D293B6BCA00525CC3 /* CountryDictionary.swift */; };
+		CB6832D1293C915800367620 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6832D0293C915700367620 /* AuthViewController.storyboard */; };
+		CB780204293BA0BA009659DD /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780203293BA0BA009659DD /* CountryService.swift */; };
+		CB780206293C644B009659DD /* CheckCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780205293C644B009659DD /* CheckCodeViewController.swift */; };
+		CB780208293C645C009659DD /* CheckCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB780207293C645C009659DD /* CheckCodeViewController.storyboard */; };
+		CB78020A293C6DA2009659DD /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780209293C6DA2009659DD /* LoaderView.swift */; };
+		CB78020E293C713C009659DD /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78020D293C713C009659DD /* AlertHelper.swift */; };
+		CB780212293C78CF009659DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780211293C78CF009659DD /* User.swift */; };
+		CB780214293C7F22009659DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780213293C7F22009659DD /* RegisterViewController.swift */; };
+		CB780216293C7F2C009659DD /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB780215293C7F2C009659DD /* RegisterViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +47,23 @@
 		CB19C720293B3B4700525CC3 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		CB19C722293B3BED00525CC3 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		CB19C724293B3BF900525CC3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CB19C728293B457600525CC3 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CB19C72C293B45A300525CC3 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CB19C72E293B45B600525CC3 /* MangoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MangoModel.swift; sourceTree = "<group>"; };
+		CB19C734293B50A800525CC3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CB19C736293B572700525CC3 /* SelectCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryViewController.swift; sourceTree = "<group>"; };
+		CB19C739293B573E00525CC3 /* SelectCountryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCountryViewController.storyboard; sourceTree = "<group>"; };
+		CB19C73B293B684800525CC3 /* RightLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightLabelTableViewCell.swift; sourceTree = "<group>"; };
+		CB19C73D293B6BCA00525CC3 /* CountryDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDictionary.swift; sourceTree = "<group>"; };
+		CB6832D0293C915700367620 /* AuthViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		CB780203293BA0BA009659DD /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		CB780205293C644B009659DD /* CheckCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCodeViewController.swift; sourceTree = "<group>"; };
+		CB780207293C645C009659DD /* CheckCodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckCodeViewController.storyboard; sourceTree = "<group>"; };
+		CB780209293C6DA2009659DD /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		CB78020D293C713C009659DD /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		CB780211293C78CF009659DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB780213293C7F22009659DD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CB780215293C7F2C009659DD /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +108,22 @@
 		CB19C70A293B33B700525CC3 /* MangoTest */ = {
 			isa = PBXGroup;
 			children = (
-				CB19C726293B3C2600525CC3 /* Source */,
 				CB19C70B293B33B700525CC3 /* AppDelegate.swift */,
 				CB19C70D293B33B700525CC3 /* SceneDelegate.swift */,
 				CB19C722293B3BED00525CC3 /* RootViewController.swift */,
 				CB19C724293B3BF900525CC3 /* Extensions.swift */,
+				CB19C730293B45BE00525CC3 /* Network Service */,
+				CB19C727293B44B100525CC3 /* Auth and Register */,
+				CB19C726293B3C2600525CC3 /* Source */,
 				CB19C714293B33BA00525CC3 /* Assets.xcassets */,
 				CB19C716293B33BA00525CC3 /* LaunchScreen.storyboard */,
 				CB19C719293B33BA00525CC3 /* Info.plist */,
+				CB19C734293B50A800525CC3 /* Localizable.strings */,
+				CB19C738293B572B00525CC3 /* Select Country controller */,
+				CB780203293BA0BA009659DD /* CountryService.swift */,
+				CB780209293C6DA2009659DD /* LoaderView.swift */,
+				CB78020D293C713C009659DD /* AlertHelper.swift */,
+				CB780211293C78CF009659DD /* User.swift */,
 			);
 			path = MangoTest;
 			sourceTree = "<group>";
@@ -92,6 +134,39 @@
 				CB19C720293B3B4700525CC3 /* loader.json */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		CB19C727293B44B100525CC3 /* Auth and Register */ = {
+			isa = PBXGroup;
+			children = (
+				CB19C728293B457600525CC3 /* AuthViewController.swift */,
+				CB6832D0293C915700367620 /* AuthViewController.storyboard */,
+				CB780205293C644B009659DD /* CheckCodeViewController.swift */,
+				CB780207293C645C009659DD /* CheckCodeViewController.storyboard */,
+				CB780213293C7F22009659DD /* RegisterViewController.swift */,
+				CB780215293C7F2C009659DD /* RegisterViewController.storyboard */,
+			);
+			path = "Auth and Register";
+			sourceTree = "<group>";
+		};
+		CB19C730293B45BE00525CC3 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				CB19C72C293B45A300525CC3 /* NetworkService.swift */,
+				CB19C72E293B45B600525CC3 /* MangoModel.swift */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		CB19C738293B572B00525CC3 /* Select Country controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB19C736293B572700525CC3 /* SelectCountryViewController.swift */,
+				CB19C739293B573E00525CC3 /* SelectCountryViewController.storyboard */,
+				CB19C73B293B684800525CC3 /* RightLabelTableViewCell.swift */,
+				CB19C73D293B6BCA00525CC3 /* CountryDictionary.swift */,
+			);
+			path = "Select Country controller";
 			sourceTree = "<group>";
 		};
 		F88FBE39FDA25BC793AD66F3 /* Frameworks */ = {
@@ -114,6 +189,7 @@
 				CB19C705293B33B700525CC3 /* Frameworks */,
 				CB19C706293B33B700525CC3 /* Resources */,
 				CB19C71F293B36A900525CC3 /* ShellScript */,
+				7FB3A6CED199138BF60E53EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,8 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB19C73A293B573E00525CC3 /* SelectCountryViewController.storyboard in Resources */,
+				CB19C735293B50A800525CC3 /* Localizable.strings in Resources */,
 				CB19C718293B33BA00525CC3 /* LaunchScreen.storyboard in Resources */,
+				CB780216293C7F2C009659DD /* RegisterViewController.storyboard in Resources */,
 				CB19C715293B33BA00525CC3 /* Assets.xcassets in Resources */,
+				CB6832D1293C915800367620 /* AuthViewController.storyboard in Resources */,
+				CB780208293C645C009659DD /* CheckCodeViewController.storyboard in Resources */,
 				CB19C721293B3B4700525CC3 /* loader.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +252,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7FB3A6CED199138BF60E53EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoTest/Pods-MangoTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoTest/Pods-MangoTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangoTest/Pods-MangoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB19C71F293B36A900525CC3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,9 +315,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB780206293C644B009659DD /* CheckCodeViewController.swift in Sources */,
 				CB19C725293B3BF900525CC3 /* Extensions.swift in Sources */,
 				CB19C70C293B33B700525CC3 /* AppDelegate.swift in Sources */,
+				CB78020A293C6DA2009659DD /* LoaderView.swift in Sources */,
+				CB78020E293C713C009659DD /* AlertHelper.swift in Sources */,
+				CB19C73E293B6BCA00525CC3 /* CountryDictionary.swift in Sources */,
+				CB19C72F293B45B600525CC3 /* MangoModel.swift in Sources */,
+				CB19C729293B457600525CC3 /* AuthViewController.swift in Sources */,
+				CB780212293C78CF009659DD /* User.swift in Sources */,
+				CB19C73C293B684800525CC3 /* RightLabelTableViewCell.swift in Sources */,
 				CB19C723293B3BED00525CC3 /* RootViewController.swift in Sources */,
+				CB780214293C7F22009659DD /* RegisterViewController.swift in Sources */,
+				CB780204293BA0BA009659DD /* CountryService.swift in Sources */,
+				CB19C737293B572700525CC3 /* SelectCountryViewController.swift in Sources */,
+				CB19C72D293B45A300525CC3 /* NetworkService.swift in Sources */,
 				CB19C70E293B33B700525CC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

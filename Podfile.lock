@@ -1,9 +1,16 @@
 PODS:
   - lottie-ios (3.3.0)
+  - PhoneNumberKit (3.5.1):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.5.1)
+    - PhoneNumberKit/UIKit (= 3.5.1)
+  - PhoneNumberKit/PhoneNumberKitCore (3.5.1)
+  - PhoneNumberKit/UIKit (3.5.1):
+    - PhoneNumberKit/PhoneNumberKitCore
   - SwiftLint (0.47.0)
 
 DEPENDENCIES:
   - lottie-ios
+  - PhoneNumberKit (from `https://github.com/marmelroy/PhoneNumberKit`)
   - SwiftLint
 
 SPEC REPOS:
@@ -11,10 +18,20 @@ SPEC REPOS:
     - lottie-ios
     - SwiftLint
 
+EXTERNAL SOURCES:
+  PhoneNumberKit:
+    :git: https://github.com/marmelroy/PhoneNumberKit
+
+CHECKOUT OPTIONS:
+  PhoneNumberKit:
+    :commit: 143ea15033dc6fede5ec73d96d9296a54dad8fef
+    :git: https://github.com/marmelroy/PhoneNumberKit
+
 SPEC CHECKSUMS:
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  PhoneNumberKit: 67009e416fa6aceb4b7d4ac9e28c5e6be5db796e
   SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
 
-PODFILE CHECKSUM: b5d46031dce17e066658235182df73e0c5c78e27
+PODFILE CHECKSUM: 2038e6187cfd9ad5fa34d3b7188193a184fed4d5
 
 COCOAPODS: 1.11.2
