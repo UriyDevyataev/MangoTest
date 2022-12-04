@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Country View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelectCountryViewController" id="Y6W-OH-hqX" customClass="SelectCountryViewController" customModule="MangoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLp-Oj-5NR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="e5d-XO-UUU">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="51"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi1-6A-Xy1">
+                                        <rect key="frame" x="348" y="10.5" width="46" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b8q-Lc-1ru"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Hi1-6A-Xy1" secondAttribute="trailing" constant="20" id="J0z-S9-RSq"/>
+                                    <constraint firstItem="e5d-XO-UUU" firstAttribute="leading" secondItem="TLp-Oj-5NR" secondAttribute="leading" id="R6h-Km-upg"/>
+                                    <constraint firstItem="e5d-XO-UUU" firstAttribute="top" secondItem="TLp-Oj-5NR" secondAttribute="top" id="WDn-E0-G6H"/>
+                                    <constraint firstAttribute="bottom" secondItem="e5d-XO-UUU" secondAttribute="bottom" id="lJa-zO-r6K"/>
+                                    <constraint firstItem="Hi1-6A-Xy1" firstAttribute="leading" secondItem="e5d-XO-UUU" secondAttribute="trailing" constant="10" id="p0f-HJ-AcD"/>
+                                    <constraint firstItem="Hi1-6A-Xy1" firstAttribute="centerY" secondItem="e5d-XO-UUU" secondAttribute="centerY" id="xeW-Eq-hdk"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0nw-cd-TPv">
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TLp-Oj-5NR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DnA-sq-IrI"/>
+                            <constraint firstItem="0nw-cd-TPv" firstAttribute="top" secondItem="TLp-Oj-5NR" secondAttribute="bottom" id="LwE-1c-gw4"/>
+                            <constraint firstItem="0nw-cd-TPv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UFK-PB-9vr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0nw-cd-TPv" secondAttribute="bottom" id="Wj3-Bc-fxd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TLp-Oj-5NR" secondAttribute="trailing" id="dRp-KZ-Sf7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0nw-cd-TPv" secondAttribute="trailing" id="g3D-9x-dGy"/>
+                            <constraint firstItem="TLp-Oj-5NR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ozn-bn-qIm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Hi1-6A-Xy1" id="2JF-eB-AdC"/>
+                        <outlet property="searchBar" destination="e5d-XO-UUU" id="qmW-Rj-Lnn"/>
+                        <outlet property="tableView" destination="0nw-cd-TPv" id="4V0-ev-EXq"/>
+                        <outlet property="topView" destination="TLp-Oj-5NR" id="Ya7-hY-Oz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
