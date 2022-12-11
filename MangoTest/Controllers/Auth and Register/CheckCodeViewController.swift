@@ -16,7 +16,7 @@ class CheckCodeViewController: UIViewController {
     
     private let loader = LoaderView()
     
-    private let networkService = NetworkServiceImp()
+    private let networkService = NetworkServiceImp.shared
     
     var inputNumber: String = ""
     
@@ -56,7 +56,9 @@ class CheckCodeViewController: UIViewController {
     
     @IBAction func continueAction(_ sender: Any) {
         view.endEditing(true)
-        loader.start(for: view)
+        
+        if !NetworkChecker.isConnected() { return }
+        loader.start()
         checkAuthCode()
     }
     
@@ -65,7 +67,10 @@ class CheckCodeViewController: UIViewController {
         else { return }
 
         controller.inputNumber = inputNumber
-        navigationController?.pushViewController(controller, animated: true)
+        
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }
 
@@ -92,33 +97,26 @@ extension CheckCodeViewController: UITextFieldDelegate {
 extension CheckCodeViewController {
     
     func checkAuthCode() {
-        
         guard
             !inputNumber.isEmpty,
             let code = codeTextField.text
         else { return }
         
         networkService.checkAuthCode(for: inputNumber, code: code) { result in
-            DispatchQueue.main.async {
-                self.responseProcessing(result)
+            self.loader.stop()
+            
+            switch result {
+            case let .success(model):
+                if model.is_user_exists {
+                    User.shared.accessToken = model.access_token
+                    User.shared.refreshToken = model.refresh_token
+                    User.shared.id = model.user_id
+                } else {
+                    self.showRegistrationController()
+                }
+            case let .failure(error):
+                AlertHelper.showErrorAlert(error)
             }
-        }
-    }
-    
-    private func responseProcessing(_ result: Result<CheckAuthCodeModel, Error>) {
-        self.loader.stop()
-        
-        switch result {
-        case let .success(model):
-            if model.is_user_exists {
-                User.shared.accessToken = model.access_token
-                User.shared.refreshToken = model.refresh_token
-                User.shared.userId = model.user_id
-            } else {
-                showRegistrationController()
-            }
-        case let .failure(error):
-            AlertHelper.showErrorAuthAlert(error)
         }
     }
 }
