@@ -106,7 +106,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setContent() {
-        phoneLabel.text = user.phone
+        phoneLabel.text = "+\(user.phone ?? "")"
         usernameLabel.text = user.username
         
         nameLabel.text = user.name

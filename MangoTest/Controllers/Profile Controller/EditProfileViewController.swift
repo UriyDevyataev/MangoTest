@@ -177,7 +177,7 @@ class EditProfileViewController: UIViewController {
     }
     
     private func setContent() {
-        phoneLabel.text = user.phone
+        phoneLabel.text = "+\(user.phone ?? "")"
         usernameLabel.text = user.username
         
         nameTextField.text = user.name
@@ -235,7 +235,7 @@ class EditProfileViewController: UIViewController {
         User.shared.city = cityTextField.text == "" ? nil : cityTextField.text
         User.shared.vk = vkTextField.text == "" ? nil : vkTextField.text
         User.shared.instagram = instagramTextField.text == "" ? nil : instagramTextField.text
-        User.shared.avatar = profileImage.image?.pngData()?.base64EncodedString()
+        User.shared.avatar = profileImage.image?.pngData()?.base64EncodedString(options: .lineLength64Characters)
         User.shared.zodiac = zodiacLabel.text == "" ? nil : zodiacLabel.text
         User.shared.about = aboutTextView.text == "" ? nil : aboutTextView.text
         

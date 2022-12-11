@@ -146,7 +146,8 @@ extension CheckCodeViewController {
                 User.shared.id = model.profile_data.id
                 User.shared.created = model.profile_data.created
                 User.shared.phone = model.profile_data.phone
-                
+                User.shared.avatar = model.profile_data.avatar
+            
                 User.shared.saveLocal()
                 
                 DispatchQueue.main.async {
