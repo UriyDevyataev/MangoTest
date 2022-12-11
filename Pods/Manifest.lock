@@ -1,0 +1,41 @@
+PODS:
+  - KeychainAccess (4.2.2)
+  - lottie-ios (3.3.0)
+  - PhoneNumberKit (3.5.1):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.5.1)
+    - PhoneNumberKit/UIKit (= 3.5.1)
+  - PhoneNumberKit/PhoneNumberKitCore (3.5.1)
+  - PhoneNumberKit/UIKit (3.5.1):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SwiftLint (0.47.0)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - lottie-ios
+  - PhoneNumberKit (from `https://github.com/marmelroy/PhoneNumberKit`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
+    - lottie-ios
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  PhoneNumberKit:
+    :git: https://github.com/marmelroy/PhoneNumberKit
+
+CHECKOUT OPTIONS:
+  PhoneNumberKit:
+    :commit: 143ea15033dc6fede5ec73d96d9296a54dad8fef
+    :git: https://github.com/marmelroy/PhoneNumberKit
+
+SPEC CHECKSUMS:
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  PhoneNumberKit: 67009e416fa6aceb4b7d4ac9e28c5e6be5db796e
+  SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
+
+PODFILE CHECKSUM: 4dc1ff153aed71d4f9c9937274a3ff3bdd3e21ba
+
+COCOAPODS: 1.11.2
