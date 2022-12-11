@@ -30,16 +30,10 @@ class ChatTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
         avatarImage.layer.cornerRadius = avatarImage.frame.height * 0.5
     }
-    
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-////        rightImage.alpha = 0
-////        separatorInset.left = 16
-//    }
     
     private func configCell() {
         backgroundColor = .clear
@@ -55,6 +49,7 @@ class ChatTableViewCell: UITableViewCell {
         
         avatarImage.contentMode = .scaleAspectFill
         avatarImage.clipsToBounds = true
+//        avatarImage.layer.cornerRadius = avatarImage.frame.height * 0.5
         
         selectionStyle = .none
         
@@ -97,5 +92,7 @@ class ChatTableViewCell: UITableViewCell {
         } else {
             dateLabel.text = ""
         }
+        
+        layoutIfNeeded()
     }
 }
