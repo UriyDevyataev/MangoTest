@@ -32,6 +32,28 @@
 		CB780212293C78CF009659DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780211293C78CF009659DD /* User.swift */; };
 		CB780214293C7F22009659DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB780213293C7F22009659DD /* RegisterViewController.swift */; };
 		CB780216293C7F2C009659DD /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB780215293C7F2C009659DD /* RegisterViewController.storyboard */; };
+		CB83FB31293E28F2001BE978 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB30293E28F2001BE978 /* TabBarController.swift */; };
+		CB83FB33293E29E5001BE978 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB32293E29E5001BE978 /* ProfileViewController.swift */; };
+		CB83FB36293E2A02001BE978 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB83FB35293E2A02001BE978 /* ProfileViewController.storyboard */; };
+		CB83FB39293E2A33001BE978 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB38293E2A33001BE978 /* ChatsViewController.swift */; };
+		CB83FB3B293E2A3E001BE978 /* ChatsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB83FB3A293E2A3E001BE978 /* ChatsViewController.storyboard */; };
+		CB83FB3D293E3D45001BE978 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB3C293E3D45001BE978 /* EditProfileViewController.swift */; };
+		CB83FB3F293E3D57001BE978 /* EditProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB83FB3E293E3D57001BE978 /* EditProfileViewController.storyboard */; };
+		CB8B26EF2944A8EF006AA7D5 /* PhotoLibraryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B26EE2944A8EF006AA7D5 /* PhotoLibraryHelper.swift */; };
+		CB8B26F22944C62D006AA7D5 /* InternetChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B26F12944C62D006AA7D5 /* InternetChecker.swift */; };
+		CB8B27032944DDA0006AA7D5 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26F62944DDA0006AA7D5 /* Roboto-Medium.ttf */; };
+		CB8B27042944DDA0006AA7D5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26F72944DDA0006AA7D5 /* Roboto-Light.ttf */; };
+		CB8B27052944DDA0006AA7D5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26F82944DDA0006AA7D5 /* Roboto-Regular.ttf */; };
+		CB8B27062944DDA0006AA7D5 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26F92944DDA0006AA7D5 /* Roboto-MediumItalic.ttf */; };
+		CB8B27072944DDA0006AA7D5 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26FA2944DDA0006AA7D5 /* Roboto-ThinItalic.ttf */; };
+		CB8B27082944DDA0006AA7D5 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26FB2944DDA0006AA7D5 /* Roboto-BoldItalic.ttf */; };
+		CB8B27092944DDA0006AA7D5 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26FC2944DDA0006AA7D5 /* Roboto-LightItalic.ttf */; };
+		CB8B270A2944DDA0006AA7D5 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26FD2944DDA0006AA7D5 /* Roboto-Italic.ttf */; };
+		CB8B270B2944DDA0006AA7D5 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26FE2944DDA0006AA7D5 /* LICENSE.txt */; };
+		CB8B270C2944DDA0006AA7D5 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B26FF2944DDA0006AA7D5 /* Roboto-BlackItalic.ttf */; };
+		CB8B270D2944DDA0006AA7D5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B27002944DDA0006AA7D5 /* Roboto-Bold.ttf */; };
+		CB8B270E2944DDA0006AA7D5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B27012944DDA0006AA7D5 /* Roboto-Thin.ttf */; };
+		CB8B270F2944DDA0006AA7D5 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB8B27022944DDA0006AA7D5 /* Roboto-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +86,28 @@
 		CB780211293C78CF009659DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB780213293C7F22009659DD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CB780215293C7F2C009659DD /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		CB83FB30293E28F2001BE978 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CB83FB32293E29E5001BE978 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CB83FB35293E2A02001BE978 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		CB83FB38293E2A33001BE978 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		CB83FB3A293E2A3E001BE978 /* ChatsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatsViewController.storyboard; sourceTree = "<group>"; };
+		CB83FB3C293E3D45001BE978 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		CB83FB3E293E3D57001BE978 /* EditProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileViewController.storyboard; sourceTree = "<group>"; };
+		CB8B26EE2944A8EF006AA7D5 /* PhotoLibraryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryHelper.swift; sourceTree = "<group>"; };
+		CB8B26F12944C62D006AA7D5 /* InternetChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetChecker.swift; sourceTree = "<group>"; };
+		CB8B26F62944DDA0006AA7D5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CB8B26F72944DDA0006AA7D5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CB8B26F82944DDA0006AA7D5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CB8B26F92944DDA0006AA7D5 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CB8B26FA2944DDA0006AA7D5 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CB8B26FB2944DDA0006AA7D5 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CB8B26FC2944DDA0006AA7D5 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		CB8B26FD2944DDA0006AA7D5 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		CB8B26FE2944DDA0006AA7D5 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CB8B26FF2944DDA0006AA7D5 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CB8B27002944DDA0006AA7D5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CB8B27012944DDA0006AA7D5 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		CB8B27022944DDA0006AA7D5 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,20 +154,14 @@
 			children = (
 				CB19C70B293B33B700525CC3 /* AppDelegate.swift */,
 				CB19C70D293B33B700525CC3 /* SceneDelegate.swift */,
-				CB19C722293B3BED00525CC3 /* RootViewController.swift */,
 				CB19C724293B3BF900525CC3 /* Extensions.swift */,
-				CB19C730293B45BE00525CC3 /* Network Service */,
-				CB19C727293B44B100525CC3 /* Auth and Register */,
+				CB8B26F42944DA3D006AA7D5 /* Controllers */,
+				CB8B26F02944AD3D006AA7D5 /* Helpers */,
 				CB19C726293B3C2600525CC3 /* Source */,
 				CB19C714293B33BA00525CC3 /* Assets.xcassets */,
 				CB19C716293B33BA00525CC3 /* LaunchScreen.storyboard */,
 				CB19C719293B33BA00525CC3 /* Info.plist */,
 				CB19C734293B50A800525CC3 /* Localizable.strings */,
-				CB19C738293B572B00525CC3 /* Select Country controller */,
-				CB780203293BA0BA009659DD /* CountryService.swift */,
-				CB780209293C6DA2009659DD /* LoaderView.swift */,
-				CB78020D293C713C009659DD /* AlertHelper.swift */,
-				CB780211293C78CF009659DD /* User.swift */,
 			);
 			path = MangoTest;
 			sourceTree = "<group>";
@@ -131,6 +169,7 @@
 		CB19C726293B3C2600525CC3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CB8B26F52944DDA0006AA7D5 /* Roboto */,
 				CB19C720293B3B4700525CC3 /* loader.json */,
 			);
 			path = Source;
@@ -167,6 +206,73 @@
 				CB19C73D293B6BCA00525CC3 /* CountryDictionary.swift */,
 			);
 			path = "Select Country controller";
+			sourceTree = "<group>";
+		};
+		CB83FB34293E29EA001BE978 /* Profile Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB83FB32293E29E5001BE978 /* ProfileViewController.swift */,
+				CB83FB35293E2A02001BE978 /* ProfileViewController.storyboard */,
+				CB83FB3C293E3D45001BE978 /* EditProfileViewController.swift */,
+				CB83FB3E293E3D57001BE978 /* EditProfileViewController.storyboard */,
+			);
+			path = "Profile Controller";
+			sourceTree = "<group>";
+		};
+		CB83FB37293E2A1F001BE978 /* Chats Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB83FB38293E2A33001BE978 /* ChatsViewController.swift */,
+				CB83FB3A293E2A3E001BE978 /* ChatsViewController.storyboard */,
+			);
+			path = "Chats Controller";
+			sourceTree = "<group>";
+		};
+		CB8B26F02944AD3D006AA7D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB19C730293B45BE00525CC3 /* Network Service */,
+				CB780211293C78CF009659DD /* User.swift */,
+				CB8B26EE2944A8EF006AA7D5 /* PhotoLibraryHelper.swift */,
+				CB780209293C6DA2009659DD /* LoaderView.swift */,
+				CB78020D293C713C009659DD /* AlertHelper.swift */,
+				CB780203293BA0BA009659DD /* CountryService.swift */,
+				CB8B26F12944C62D006AA7D5 /* InternetChecker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB8B26F42944DA3D006AA7D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB83FB34293E29EA001BE978 /* Profile Controller */,
+				CB83FB37293E2A1F001BE978 /* Chats Controller */,
+				CB19C738293B572B00525CC3 /* Select Country controller */,
+				CB19C727293B44B100525CC3 /* Auth and Register */,
+				CB83FB30293E28F2001BE978 /* TabBarController.swift */,
+				CB19C722293B3BED00525CC3 /* RootViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB8B26F52944DDA0006AA7D5 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				CB8B26F62944DDA0006AA7D5 /* Roboto-Medium.ttf */,
+				CB8B26F72944DDA0006AA7D5 /* Roboto-Light.ttf */,
+				CB8B26F82944DDA0006AA7D5 /* Roboto-Regular.ttf */,
+				CB8B26F92944DDA0006AA7D5 /* Roboto-MediumItalic.ttf */,
+				CB8B26FA2944DDA0006AA7D5 /* Roboto-ThinItalic.ttf */,
+				CB8B26FB2944DDA0006AA7D5 /* Roboto-BoldItalic.ttf */,
+				CB8B26FC2944DDA0006AA7D5 /* Roboto-LightItalic.ttf */,
+				CB8B26FD2944DDA0006AA7D5 /* Roboto-Italic.ttf */,
+				CB8B26FE2944DDA0006AA7D5 /* LICENSE.txt */,
+				CB8B26FF2944DDA0006AA7D5 /* Roboto-BlackItalic.ttf */,
+				CB8B27002944DDA0006AA7D5 /* Roboto-Bold.ttf */,
+				CB8B27012944DDA0006AA7D5 /* Roboto-Thin.ttf */,
+				CB8B27022944DDA0006AA7D5 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
 			sourceTree = "<group>";
 		};
 		F88FBE39FDA25BC793AD66F3 /* Frameworks */ = {
@@ -238,12 +344,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8B27082944DDA0006AA7D5 /* Roboto-BoldItalic.ttf in Resources */,
 				CB19C73A293B573E00525CC3 /* SelectCountryViewController.storyboard in Resources */,
+				CB8B27062944DDA0006AA7D5 /* Roboto-MediumItalic.ttf in Resources */,
 				CB19C735293B50A800525CC3 /* Localizable.strings in Resources */,
+				CB8B270D2944DDA0006AA7D5 /* Roboto-Bold.ttf in Resources */,
 				CB19C718293B33BA00525CC3 /* LaunchScreen.storyboard in Resources */,
 				CB780216293C7F2C009659DD /* RegisterViewController.storyboard in Resources */,
 				CB19C715293B33BA00525CC3 /* Assets.xcassets in Resources */,
+				CB83FB3B293E2A3E001BE978 /* ChatsViewController.storyboard in Resources */,
+				CB8B270E2944DDA0006AA7D5 /* Roboto-Thin.ttf in Resources */,
+				CB8B270B2944DDA0006AA7D5 /* LICENSE.txt in Resources */,
+				CB8B270F2944DDA0006AA7D5 /* Roboto-Black.ttf in Resources */,
+				CB8B270A2944DDA0006AA7D5 /* Roboto-Italic.ttf in Resources */,
+				CB8B270C2944DDA0006AA7D5 /* Roboto-BlackItalic.ttf in Resources */,
+				CB83FB36293E2A02001BE978 /* ProfileViewController.storyboard in Resources */,
 				CB6832D1293C915800367620 /* AuthViewController.storyboard in Resources */,
+				CB8B27052944DDA0006AA7D5 /* Roboto-Regular.ttf in Resources */,
+				CB8B27032944DDA0006AA7D5 /* Roboto-Medium.ttf in Resources */,
+				CB8B27042944DDA0006AA7D5 /* Roboto-Light.ttf in Resources */,
+				CB8B27072944DDA0006AA7D5 /* Roboto-ThinItalic.ttf in Resources */,
+				CB8B27092944DDA0006AA7D5 /* Roboto-LightItalic.ttf in Resources */,
+				CB83FB3F293E3D57001BE978 /* EditProfileViewController.storyboard in Resources */,
 				CB780208293C645C009659DD /* CheckCodeViewController.storyboard in Resources */,
 				CB19C721293B3B4700525CC3 /* loader.json in Resources */,
 			);
@@ -317,11 +439,16 @@
 			files = (
 				CB780206293C644B009659DD /* CheckCodeViewController.swift in Sources */,
 				CB19C725293B3BF900525CC3 /* Extensions.swift in Sources */,
+				CB8B26F22944C62D006AA7D5 /* InternetChecker.swift in Sources */,
 				CB19C70C293B33B700525CC3 /* AppDelegate.swift in Sources */,
 				CB78020A293C6DA2009659DD /* LoaderView.swift in Sources */,
 				CB78020E293C713C009659DD /* AlertHelper.swift in Sources */,
 				CB19C73E293B6BCA00525CC3 /* CountryDictionary.swift in Sources */,
+				CB83FB33293E29E5001BE978 /* ProfileViewController.swift in Sources */,
+				CB83FB31293E28F2001BE978 /* TabBarController.swift in Sources */,
+				CB83FB3D293E3D45001BE978 /* EditProfileViewController.swift in Sources */,
 				CB19C72F293B45B600525CC3 /* MangoModel.swift in Sources */,
+				CB8B26EF2944A8EF006AA7D5 /* PhotoLibraryHelper.swift in Sources */,
 				CB19C729293B457600525CC3 /* AuthViewController.swift in Sources */,
 				CB780212293C78CF009659DD /* User.swift in Sources */,
 				CB19C73C293B684800525CC3 /* RightLabelTableViewCell.swift in Sources */,
@@ -330,6 +457,7 @@
 				CB780204293BA0BA009659DD /* CountryService.swift in Sources */,
 				CB19C737293B572700525CC3 /* SelectCountryViewController.swift in Sources */,
 				CB19C72D293B45A300525CC3 /* NetworkService.swift in Sources */,
+				CB83FB39293E2A33001BE978 /* ChatsViewController.swift in Sources */,
 				CB19C70E293B33B700525CC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,16 +598,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DRUSX4AY34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MangoTest/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to Photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +618,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yd-04.MangoTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -500,16 +631,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DRUSX4AY34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MangoTest/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to Photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,6 +651,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yd-04.MangoTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

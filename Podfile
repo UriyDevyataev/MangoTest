@@ -6,4 +6,5 @@ target 'MangoTest' do
 pod 'SwiftLint'
 pod 'lottie-ios'
 pod 'PhoneNumberKit', :git => 'https://github.com/marmelroy/PhoneNumberKit'
+pod 'KeychainAccess'
 end
