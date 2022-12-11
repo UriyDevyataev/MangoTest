@@ -31,12 +31,4 @@ final class NetworkChecker {
         let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
         return (isReachable && !needsConnection)
     }
-    
-    private class func showAlert() {
-        let message = "no_internet_message".localized
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in })
-        alert.addAction(okAction)
-        UIApplication.currentController()?.present(alert, animated: true, completion: nil)
-    }
 }

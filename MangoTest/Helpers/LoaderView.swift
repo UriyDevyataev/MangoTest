@@ -31,7 +31,8 @@ class LoaderView: UIView {
         loader.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
     }
     
-    func start(for view: UIView) {
+    func start() {
+        guard let view = UIApplication.currentController()?.view else { return }
         view.addSubview(self)
         addFullConstraint()
         
@@ -43,10 +44,12 @@ class LoaderView: UIView {
     }
     
     func stop() {
-        UIView.animate(withDuration: 0.4) {
-            self.alpha = 0
-        } completion: { _ in
-            self.removeFromSuperview()
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.4) {
+                self.alpha = 0
+            } completion: { _ in
+                self.removeFromSuperview()
+            }
         }
     }    
 }
