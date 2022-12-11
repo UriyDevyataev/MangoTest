@@ -18,7 +18,6 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        try? Keychain().accessibility(.whenUnlocked).set(Data(), key: "profile_protected")
         view.backgroundColor = .white
         showLoader()
         addObserver()
