@@ -72,6 +72,14 @@ class CheckCodeViewController: UIViewController {
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
+    
+    private func showMainScreen() {
+        DispatchQueue.main.async {
+            let controller = TabBarController()
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            appDelegate?.window?.rootViewController = controller
+        }
+    }
 }
 
 extension CheckCodeViewController: UITextFieldDelegate {
@@ -110,9 +118,39 @@ extension CheckCodeViewController {
                 if model.is_user_exists {
                     User.shared.accessToken = model.access_token
                     User.shared.refreshToken = model.refresh_token
-                    User.shared.id = model.user_id
+                    User.shared.saveLocal()
+                    self.getMe()
                 } else {
                     self.showRegistrationController()
+                }
+            case let .failure(error):
+                AlertHelper.showErrorAlert(error)
+            }
+        }
+    }
+    
+    private func getMe() {
+        networkService.getMe(User.shared.accessToken ?? "") { result in
+            self.loader.stop()
+            
+            switch result {
+            case let .success(model):
+                User.shared.name = model.profile_data.name
+                User.shared.username = model.profile_data.username
+                User.shared.birthday = model.profile_data.birthday
+                User.shared.city = model.profile_data.city
+                User.shared.vk = model.profile_data.vk
+                User.shared.instagram = model.profile_data.instagram
+                User.shared.status = model.profile_data.status
+                User.shared.avatar = model.profile_data.avatar
+                User.shared.id = model.profile_data.id
+                User.shared.created = model.profile_data.created
+                User.shared.phone = model.profile_data.phone
+                
+                User.shared.saveLocal()
+                
+                DispatchQueue.main.async {
+                    self.showMainScreen()
                 }
             case let .failure(error):
                 AlertHelper.showErrorAlert(error)
