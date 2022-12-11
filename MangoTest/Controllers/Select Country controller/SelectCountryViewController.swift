@@ -85,7 +85,6 @@ class SelectCountryViewController: UIViewController {
         tableView.reloadData()
     }
     
-    
     // MARK: - Actions
     
     @IBAction func cancelAction(_ sender: Any) {
