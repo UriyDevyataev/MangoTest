@@ -202,7 +202,10 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func actionEditImage(_ sender: UIButton) {
         PhotoAuthHelper.photoLibraryAuth { result in
-            if !result { return }
+            if !result {
+                AlertHelper.presentOpenSettingsAlert()
+                return
+            }
             DispatchQueue.main.async {
                 self.present(self.imagePicker, animated: true, completion: nil)
             }
