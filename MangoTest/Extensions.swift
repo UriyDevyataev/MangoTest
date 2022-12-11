@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 
-// swiftlint:disable comment_spacing
-
 // MARK: - String
 extension String {
     

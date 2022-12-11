@@ -5,8 +5,6 @@
 //  Created by Юрий Девятаев on 11.12.2022.
 //
 
-// swiftlint: disable identifier_name
-
 import Foundation
 import UIKit
 
