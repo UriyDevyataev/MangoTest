@@ -22,7 +22,7 @@ class AuthViewController: UIViewController {
     var inputNumber: String = ""
     
     private let countryService = CountryServiceImp.shared
-    private let networkService = NetworkServiceImp()
+    private let networkService = NetworkServiceImp.shared
     
     private let loader = LoaderView()
     
@@ -177,7 +177,10 @@ class AuthViewController: UIViewController {
         else { return }
         
         controller.inputNumber = inputNumber
-        navigationController?.pushViewController(controller, animated: true)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+        
     }
     
     // MARK: - Actions
@@ -188,7 +191,9 @@ class AuthViewController: UIViewController {
     
     @IBAction func continueAction(_ sender: Any) {
         view.endEditing(true)
-        loader.start(for: view)
+        
+        if !NetworkChecker.isConnected() { return }
+        loader.start()
         sendPhoneNumber()
     }
     
@@ -276,31 +281,22 @@ extension AuthViewController {
         inputNumber = code + numberDigit
         
         networkService.getAuthCode(for: inputNumber) { result in
-            DispatchQueue.main.async {
-                self.responseProcessing(result)
+            self.loader.stop()
+            
+            switch result {
+            case let .success(model):
+                if model.is_success {
+                    self.showCheckCodeController()
+                    return
+                }
+                let error = NSError(domain: "try_later".localized, code: 404, userInfo: nil)
+                AlertHelper.showErrorAlert(error)
+            case let .failure(error):
+                AlertHelper.showErrorAlert(error)
             }
-        }
-    }
-    
-    private func responseProcessing(_ result: Result<Bool, Error>) {
-        self.loader.stop()
-        switch result {
-        case let .success(res):
-            
-            if res {
-                self.showCheckCodeController()
-                return
-            }
-            
-            let error = NSError(domain: "try_later".localized, code: 404, userInfo: nil)
-            AlertHelper.showErrorAuthAlert(error)
-            
-        case let .failure(error):
-            AlertHelper.showErrorAuthAlert(error)
         }
     }
 }
-
 
 // MARK: - Add observers
 extension AuthViewController {
