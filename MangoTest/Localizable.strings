@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  MangoTest
+
+  Created by Юрий Девятаев on 03.12.2022.
+  
+*/
+
+// MARK: - Auth
+"auth_info_send" = "Check the country code and enter your phone number";
+"country" = "Country";
+"auth_info_check" = "Enter the code sent to you by SMS";
+"continue" = "Continue";
+"register" = "Registration";
+"name_placeholder" = "Enter name";
+"username_placeholder" = "Enter username";
+
+// MARK: - Select Country Controller
+"cancel" = "Cancel";
+
+"error_alert_title" = "Error";
+"try_later" = "Please try later";
+
+// MARK: - Profile Controller
+
+"name_info" = "Name";
+"city_info" = "Сity";
+"birthday_info" = "Date of Birth";
+"zodiac_info" = "Zodiac";
+"vk_info" = "Vk";
+"instagram_info" = "Instagram";
+"about_info" = "About:";
+"registered" = "registered %@";
+
+"save" = "Save";
+"cancel" = "Cancel";
+
+// MARK: - Chats Controller
+
+"chats" = "Chats";
+
+"no_internet_message" = "Please check internet connection";
+"Settings" = "Settings";
