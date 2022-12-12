@@ -19,6 +19,14 @@ class TabBarController: UITabBarController {
         setupVC()
         setupUI()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !NetworkChecker.isConnected() {
+            AlertHelper.showNoInternetAlert()
+            return
+        }
+    }
 
     private func setupUI() {        
         let tabBarAppearance = UITabBarAppearance()
