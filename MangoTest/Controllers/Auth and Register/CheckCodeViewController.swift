@@ -57,7 +57,11 @@ class CheckCodeViewController: UIViewController {
     @IBAction func continueAction(_ sender: Any) {
         view.endEditing(true)
         
-        if !NetworkChecker.isConnected() { return }
+        if !NetworkChecker.isConnected() {
+            AlertHelper.showNoInternetAlert()
+            return
+        }
+        
         loader.start()
         checkAuthCode()
     }

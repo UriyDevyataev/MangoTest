@@ -57,13 +57,19 @@ class RootViewController: UIViewController {
     }
     
     private func checkAutorize() {
-        if !NetworkChecker.isConnected() { return }
+        
         
         guard
             let accessToken = User.shared.accessToken,
             let refreshToken = User.shared.refreshToken
         else {
             toAutorize()
+            return
+        }
+        
+        if !NetworkChecker.isConnected() {
+            AlertHelper.showNoInternetAlert()
+            toApp()
             return
         }
         

@@ -72,7 +72,11 @@ class RegisterViewController: UIViewController {
     @IBAction func actionContinue(_ sender: Any) {
         view.endEditing(true)
         
-        if !NetworkChecker.isConnected() { return }
+        if !NetworkChecker.isConnected() {
+            AlertHelper.showNoInternetAlert()
+            return
+        }
+        
         loader.start()
         registration()
     }

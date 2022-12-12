@@ -232,7 +232,11 @@ class EditProfileViewController: UIViewController {
     @objc
     private func actionSave() {
         if !isValidData() { return }
-        if !NetworkChecker.isConnected() { return }
+        
+        if !NetworkChecker.isConnected() {
+            AlertHelper.showNoInternetAlert()
+            return
+        }
         
         view.endEditing(true)
         loader.start()
