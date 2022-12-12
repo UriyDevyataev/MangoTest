@@ -32,14 +32,15 @@ class LoaderView: UIView {
     }
     
     func start() {
-        guard let view = UIApplication.currentController()?.view else { return }
-        view.addSubview(self)
-        addFullConstraint()
-        
-        loader.startAnimating()
-        
-        UIView.animate(withDuration: 0.4) {
-            self.alpha = 1
+        DispatchQueue.main.async {
+            guard let view = UIApplication.currentController()?.view else { return }
+            view.addSubview(self)
+            self.addFullConstraint()
+            self.loader.startAnimating()
+            
+            UIView.animate(withDuration: 0.4) {
+                self.alpha = 1
+            }
         }
     }
     
@@ -51,5 +52,5 @@ class LoaderView: UIView {
                 self.removeFromSuperview()
             }
         }
-    }    
+    }
 }
