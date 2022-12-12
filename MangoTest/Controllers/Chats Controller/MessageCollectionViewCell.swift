@@ -35,14 +35,13 @@ class MessageCollectionViewCell: UICollectionViewCell {
         backgroundColor = .clear
         
         messageView.layer.cornerRadius = 10
-        messageView.backgroundColor = .black.withAlphaComponent(0.4)
         
         textLabel.font = UIFont.robotoRegular()
         textLabel.textColor = .white
         textLabel.numberOfLines = 0
         
         dateLabel.font = UIFont.robotoRegular(size: 13)
-        dateLabel.textColor = .black
+        dateLabel.textColor = .gray
         dateLabel.textAlignment = .right
         
         addSubview(messageView)
@@ -81,6 +80,9 @@ class MessageCollectionViewCell: UICollectionViewCell {
 
         leftConstraint = nil
         rightConstraint = nil
+        
+        let color: UIColor = isMy ? .blue : .black
+        messageView.backgroundColor = color.withAlphaComponent(0.4)
 
         if isMy {
             rightConstraint = messageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5)

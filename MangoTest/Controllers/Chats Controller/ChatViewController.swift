@@ -16,8 +16,8 @@ class ChatViewController: UIViewController {
     
     // constraints
     @IBOutlet private weak var heighTextView: NSLayoutConstraint!
-    @IBOutlet private weak var bottomConstraintTextView: NSLayoutConstraint!
-    @IBOutlet private weak var bottomConstraintTextContainer: NSLayoutConstraint!
+    
+    private var keyBoardConstraint: NSLayoutConstraint?
     
     private var standartHeighTabBr: CGFloat {
         tabBarController?.tabBar.frame.height ?? 80
@@ -35,8 +35,11 @@ class ChatViewController: UIViewController {
         tabBarController?.tabBar.isHidden = true
         createDataSource()
         config()
-        addObserver()
         addGesture()
+        
+        keyBoardConstraint = view.keyboardLayoutGuide.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 10)
+        
+        keyBoardConstraint?.isActive = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -76,9 +79,7 @@ class ChatViewController: UIViewController {
         textView.layer.cornerRadius = textView.frame.height * 0.5
         textView.contentInset.left = 10
         textView.delegate = self
-        
-        bottomConstraintTextView.constant = standartHeighTabBr - standartHeighTextView - 10
-        
+                
         sendButton.setTitle("", for: .normal)
         sendButton.setImage(.init(systemName: "paperplane.fill"), for: .normal)
         sendButton.tintColor = .white
@@ -161,42 +162,6 @@ extension ChatViewController: UICollectionViewDelegateFlowLayout {
 extension ChatViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         updateSizeTextView()
-    }
-}
-
-// MARK: - EditProfileViewController
-extension ChatViewController {
-    
-    func addObserver() {
-        NotificationCenter.default.addObserver(
-            self, selector: #selector(keyboardWillShow),
-            name: UIApplication.keyboardWillShowNotification, object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self, selector: #selector(keyboardWillHide),
-            name: UIApplication.keyboardWillHideNotification, object: nil)
-    }
-    
-    @objc
-    func keyboardWillShow(_ notification: Notification) {
-        guard let keyBoard: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey]
-                as? NSValue
-        else { return }
-        
-        let rect = textView.convert(textView.bounds, to: view)
-        let offset = rect.maxY - keyBoard.cgRectValue.minY + 10
-        
-        UIView.animate(withDuration: 0.3) {
-            self.view.transform = .init(translationX: 0, y: -offset)
-        }
-        
-    }
-    
-    @objc
-    func keyboardWillHide(_ notification: Notification) {
-        UIView.animate(withDuration: 0.2) {
-            self.view.transform = .identity
-        }
     }
 }
 
