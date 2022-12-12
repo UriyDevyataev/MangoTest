@@ -38,6 +38,22 @@ extension String {
     }
 }
 
+// MARK: - UIScrollView
+extension UIScrollView {
+
+    func scrollToBottom(animated: Bool) {
+        if contentSize.height < bounds.height { return }
+        let bottomOffset = CGPoint(x: 0, y: contentSize.height + contentInset.bottom - bounds.height)
+        setContentOffset(bottomOffset, animated: animated)
+    }
+
+    func scrollToTop(animated: Bool) {
+        setContentOffset(.zero, animated: animated)
+        
+    }
+}
+
+// MARK: - UIFont
 extension UIFont {
     static func robotoRegular(size: CGFloat = 17) -> UIFont {
         let systemFont = UIFont.systemFont(ofSize: size, weight: .regular)

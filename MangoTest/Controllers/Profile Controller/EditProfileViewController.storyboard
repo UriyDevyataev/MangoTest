@@ -224,6 +224,7 @@
                         <outlet property="nameTextField" destination="JQo-Re-dZi" id="vvZ-aM-BTI"/>
                         <outlet property="phoneLabel" destination="toR-fp-ZHq" id="IUw-bC-hZs"/>
                         <outlet property="profileImage" destination="Yjk-1C-nTb" id="Rm0-BO-mLP"/>
+                        <outlet property="scrollView" destination="H0h-o0-0sS" id="bRa-Tf-kfb"/>
                         <outlet property="usernameLabel" destination="ztj-q3-RLy" id="gpo-Bc-4Un"/>
                         <outlet property="vkInfoLabel" destination="Lnm-ga-tbn" id="AiU-Lg-RIx"/>
                         <outlet property="vkTextField" destination="kAC-9Q-Ajp" id="oYG-5Z-Bb5"/>

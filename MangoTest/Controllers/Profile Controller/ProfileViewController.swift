@@ -57,7 +57,8 @@ class ProfileViewController: UIViewController {
         configLabels()
     }
     
-    func configNavigationBar() {        
+    func configNavigationBar() {
+        title = "profile".localized
         let editButton = UIBarButtonItem(
             image: UIImage(systemName: "pencil"),
             style: .done,

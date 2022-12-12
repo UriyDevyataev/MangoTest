@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xfl-bf-dWK">
-                                <rect key="frame" x="0.0" y="44" width="414" height="790"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="799"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yhJ-Ak-N3e">
                                     <size key="itemSize" width="128" height="128"/>
@@ -29,20 +29,20 @@
                                 <cells/>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnm-8c-qWA">
-                                <rect key="frame" x="0.0" y="834" width="414" height="62"/>
+                                <rect key="frame" x="0.0" y="843" width="414" height="53"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-Q5-00k">
-                                        <rect key="frame" x="20" y="10" width="343" height="42"/>
+                                        <rect key="frame" x="20" y="10" width="343" height="33"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="Mul-bz-xvF"/>
+                                            <constraint firstAttribute="height" constant="33" id="Mul-bz-xvF"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAv-uD-xqQ">
-                                        <rect key="frame" x="373" y="21" width="31" height="31"/>
+                                        <rect key="frame" x="373" y="12" width="31" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="Ho5-Ti-IXo"/>
                                             <constraint firstAttribute="width" secondItem="qAv-uD-xqQ" secondAttribute="height" multiplier="1:1" id="UgH-GO-EK5"/>
@@ -57,7 +57,7 @@
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="qAv-uD-xqQ" secondAttribute="trailing" constant="10" id="FhY-os-adu"/>
-                                    <constraint firstAttribute="bottom" secondItem="FuS-Q5-00k" secondAttribute="bottom" constant="10" id="HYf-zs-Yt5"/>
+                                    <constraint firstAttribute="bottom" secondItem="FuS-Q5-00k" secondAttribute="bottom" priority="100" constant="10" id="HYf-zs-Yt5"/>
                                     <constraint firstItem="FuS-Q5-00k" firstAttribute="top" secondItem="mnm-8c-qWA" secondAttribute="top" constant="10" id="Myw-BO-IAx"/>
                                     <constraint firstItem="qAv-uD-xqQ" firstAttribute="leading" secondItem="FuS-Q5-00k" secondAttribute="trailing" constant="10" id="Rw0-5c-idJ"/>
                                     <constraint firstItem="FuS-Q5-00k" firstAttribute="leading" secondItem="mnm-8c-qWA" secondAttribute="leading" constant="20" id="del-Fu-an4"/>
@@ -78,10 +78,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomConstraintTextContainer" destination="aUx-Fe-axu" id="aqp-Hx-acu"/>
-                        <outlet property="bottomConstraintTextView" destination="HYf-zs-Yt5" id="6ee-WG-PHw"/>
                         <outlet property="collectionView" destination="xfl-bf-dWK" id="bum-Ef-q58"/>
-                        <outlet property="heighTextView" destination="Mul-bz-xvF" id="WJG-dT-SPc"/>
+                        <outlet property="heighTextView" destination="Mul-bz-xvF" id="nCG-vx-q4m"/>
                         <outlet property="sendButton" destination="qAv-uD-xqQ" id="Fmx-id-ezS"/>
                         <outlet property="textView" destination="FuS-Q5-00k" id="M4n-Dn-9TD"/>
                         <outlet property="textViewContainer" destination="mnm-8c-qWA" id="mgv-J6-HPO"/>

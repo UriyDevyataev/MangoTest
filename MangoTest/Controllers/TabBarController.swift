@@ -20,10 +20,11 @@ class TabBarController: UITabBarController {
         setupUI()
     }
 
-    private func setupUI() {
-        UITabBar.appearance().backgroundColor = .darkGray
-        UITabBar.appearance().tintColor = .link
-        UITabBar.appearance().unselectedItemTintColor = .lightGray
+    private func setupUI() {        
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.backgroundColor = .lightGray.withAlphaComponent(0.5)
+        tabBar.standardAppearance = tabBarAppearance
+        tabBar.scrollEdgeAppearance = tabBarAppearance
     }
 
     private func setupVC() {
@@ -79,7 +80,6 @@ extension TabBarController {
             title: "",
             image: UIImage(systemName: "person.crop.circle"),
             selectedImage: UIImage(systemName: "person.crop.circle"))
-        
         return navVC
     }
 }

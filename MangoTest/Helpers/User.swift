@@ -42,13 +42,7 @@ final class User {
     let key = "profile_info"
     let keyProtected = "profile_protected"
     
-    var refreshToken: String? {
-        didSet {
-            if refreshToken == nil {
-                print()
-            }
-        }
-    }
+    var refreshToken: String?
     var accessToken: String?
     
     var name: String?
@@ -88,7 +82,6 @@ final class User {
         }
         
         if let token = loadProtectedData() {
-            print(token)
             self.accessToken = token.accessToken
             self.refreshToken = token.refreshToken
         }

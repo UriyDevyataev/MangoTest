@@ -29,6 +29,7 @@ enum ZodiacSign: String {
 
 class EditProfileViewController: UIViewController {
     
+    @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var editImageButton: UIButton!
     @IBOutlet private weak var profileImage: UIImageView!
@@ -83,6 +84,7 @@ class EditProfileViewController: UIViewController {
     
     private func config() {
         configNavigationBar()
+        configScrollView()
         configProfileImage()
         configLabels()
         configTextFields()
@@ -108,6 +110,11 @@ class EditProfileViewController: UIViewController {
         
         navigationItem.leftBarButtonItem = cancelButton
         navigationItem.rightBarButtonItem = saveButton
+    }
+    
+    private func configScrollView() {
+        scrollView.keyboardDismissMode = .interactive
+        scrollView.contentInset.bottom = 10
     }
     
     private func configProfileImage() {
@@ -235,7 +242,7 @@ class EditProfileViewController: UIViewController {
         User.shared.city = cityTextField.text == "" ? nil : cityTextField.text
         User.shared.vk = vkTextField.text == "" ? nil : vkTextField.text
         User.shared.instagram = instagramTextField.text == "" ? nil : instagramTextField.text
-        User.shared.avatar = profileImage.image?.pngData()?.base64EncodedString(options: .lineLength64Characters)
+        User.shared.avatar = profileImage.image?.pngData()?.base64EncodedString()
         User.shared.zodiac = zodiacLabel.text == "" ? nil : zodiacLabel.text
         User.shared.about = aboutTextView.text == "" ? nil : aboutTextView.text
         
@@ -315,17 +322,13 @@ extension EditProfileViewController {
         let offset = rect.maxY - keyBoard.cgRectValue.minY + 20
 
         if offset < 0 { return }
-
-        UIView.animate(withDuration: 0.3) {
-            self.contentView.transform = CGAffineTransform(translationX: 0, y: -offset)
-        }
+        scrollView.contentInset.bottom = offset
+        scrollView.scrollToBottom(animated: true)
     }
     
     @objc
     func keyboardWillHide(_ notification: Notification) {
-        UIView.animate(withDuration: 0.3) {
-            self.contentView.transform = .identity
-        }
+        self.scrollView.contentInset.bottom = 10
     }
 }
 
