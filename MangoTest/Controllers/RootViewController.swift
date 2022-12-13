@@ -14,13 +14,15 @@ class RootViewController: UIViewController {
     private let gifContainer = UIView()
     private var animationView: AnimationView?
     private let networkService = NetworkServiceImp.shared
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+            
         view.backgroundColor = .white
         showLoader()
         addObserver()
+        
+        clearKeychainIfWillUnistall()
         checkAutorize()
     }
     
@@ -33,7 +35,7 @@ class RootViewController: UIViewController {
         animationView?.contentMode = .scaleAspectFit
         animationView?.loopMode = .loop
         animationView?.animationSpeed = 1
-
+        
         guard let animationView = animationView else { return }
         gifContainer.addSubview(animationView)
         animationView.addFullConstraint()
@@ -83,6 +85,14 @@ class RootViewController: UIViewController {
             }
         }
     }
+    
+    func clearKeychainIfWillUnistall() {
+        let freshInstall = !UserDefaults.standard.bool(forKey: "alreadyInstalled")
+        if freshInstall {
+            try? Keychain().accessibility(.always).set(Data(), key: "profile_protected")
+            UserDefaults.standard.set(true, forKey: "alreadyInstalled")
+        }
+    }
 }
 
 // MARK: - Observer
@@ -92,7 +102,7 @@ extension RootViewController {
             self, selector: #selector(didBecome),
             name: UIApplication.didBecomeActiveNotification, object: nil)
     }
-
+    
     @objc
     func didBecome() {
         animationView?.play()
